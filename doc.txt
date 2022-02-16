@@ -1,0 +1,32 @@
+
+Request Type: POST
+
+Request URL: http://localhost:3000/v1/total
+
+Data Passed to the request:
+{
+    "sanitizer":100, 
+    "bag":2,
+    "notebook":4
+}
+
+ Response Data:
+If Successful
+
+{
+    "orginal_price": 28400,
+    "logs": [
+        "No offers added for notebooks",
+        "After flat 100 rupees off  price = 28300",
+        "Below 2 bags no price change",
+        "Applied PRIME 123 promo code price = 28177"
+    ],
+    "final_price": 28177
+}
+
+If error
+{
+    "status": " Error",
+    "data": /error/
+
+
